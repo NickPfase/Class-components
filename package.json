@@ -9,20 +9,20 @@
     "@types/react-dom": "^18.2.18",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "typescript": "^4.9.5",
+    "typescript": "^5.0.0",
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.31.0",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "@typescript-eslint/parser": "^6.21.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
     "@vitejs/plugin-react": "^4.2.1",
-    "eslint": "^8.56.0",
+    "eslint": "^9.0.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.5.1",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-compiler": "^19.0.0-beta-af1b7da-20250417",
-    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
     "husky": "^8.0.3",
@@ -38,15 +38,6 @@
     "format": "prettier --check src",
     "format:fix": "prettier --write .",
     "prepare": "husky install"
-  },
-  "eslintConfig": {
-    "extends": [
-      "eslint:recommended",
-      "@typescript-eslint/recommended",
-      "plugin:react/recommended",
-      "plugin:react-hooks/recommended",
-      "prettier"
-    ]
   },
   "browserslist": {
     "production": [
