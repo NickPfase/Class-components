@@ -28,7 +28,10 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
       return (
         <div className="error-boundary">
           <h2>Something went wrong!</h2>
-          <p>An error occurred in the application. Please try refreshing the page.</p>
+          <p>
+            An error occurred in the application. Please try refreshing the
+            page.
+          </p>
           <details style={{ whiteSpace: 'pre-wrap' }}>
             {this.state.error && this.state.error.toString()}
           </details>

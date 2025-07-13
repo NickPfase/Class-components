@@ -3,13 +3,18 @@ import { PokemonResponse, PokemonDetails } from './types';
 const API_BASE_URL = 'https://pokeapi.co/api/v2';
 
 export const pokemonApi = {
-  async searchPokemon(searchTerm: string = '', limit: number = 20): Promise<PokemonResponse> {
+  async searchPokemon(
+    searchTerm: string = '',
+    limit: number = 20
+  ): Promise<PokemonResponse> {
     const url = `${API_BASE_URL}/pokemon?limit=${limit}`;
 
     if (searchTerm) {
       // For search, we'll get all Pokemon and filter by name
       // Note: Pokemon API doesn't support search directly, so we'll use a workaround
-      const allPokemonResponse = await fetch(`${API_BASE_URL}/pokemon?limit=1000`);
+      const allPokemonResponse = await fetch(
+        `${API_BASE_URL}/pokemon?limit=1000`
+      );
 
       if (!allPokemonResponse.ok) {
         throw new Error(`HTTP error! status: ${allPokemonResponse.status}`);

@@ -34,7 +34,8 @@ class App extends Component<Record<string, never>, AppState> {
       });
     } catch (error) {
       this.setState({
-        error: error instanceof Error ? error.message : 'An unknown error occurred',
+        error:
+          error instanceof Error ? error.message : 'An unknown error occurred',
         loading: false,
         items: [],
       });
@@ -57,7 +58,11 @@ class App extends Component<Record<string, never>, AppState> {
       <ErrorBoundary>
         <div className="container">
           <h1>Pokemon Search</h1>
-          <Search searchTerm={searchTerm} onSearch={this.handleSearch} loading={loading} />
+          <Search
+            searchTerm={searchTerm}
+            onSearch={this.handleSearch}
+            loading={loading}
+          />
           <Results items={items} loading={loading} error={error} />
           <button className="error-button" onClick={this.throwError}>
             Test Error Boundary
