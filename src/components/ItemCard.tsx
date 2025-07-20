@@ -47,7 +47,7 @@ class ItemCard extends Component<ItemCardProps, ItemCardState> {
     };
 
     return (
-      <div className="item-card">
+      <div className="item-card" data-testid="item-card">
         <div className="item-name">{formatName(item.name)}</div>
         <div className="item-description">{getDescription()}</div>
       </div>

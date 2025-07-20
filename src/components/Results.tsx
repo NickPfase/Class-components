@@ -10,7 +10,7 @@ class Results extends Component<ResultsProps> {
       return (
         <div className="results-section">
           <div className="loading">
-            <div className="spinner"></div>
+            <div className="spinner" data-testid="spinner"></div>
           </div>
         </div>
       );
